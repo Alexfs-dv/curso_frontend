@@ -9,12 +9,15 @@
 <body>
     <div class="container">
         <h1>Formulário</h1>
-        <h2>Qual é o maior?</h2>
-        <form>
-            <input type="number" required placeholder="Digite o primeiro número">
-            <input type="number" required placeholder="Digite o segundo número">
+        <h2>Digite o número do campo B maior</h2>
+        <form id="form-maior">
+            <input id="number-a" type="number" required placeholder="Campo A">
+            <p class="error-message"></p>
+            <input id="number-b" type="number" required placeholder="Campo B">
             <button type="submit">Comparar</button>
+            <p class="success-message"></p>
         </form>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
