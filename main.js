@@ -1,4 +1,5 @@
 const form = document.getElementById('form-maior');
+const eValido = document.getElementById('number-a');
 const errorMessage = 'O número do campo B precisa ser maior';
 const successMessage = 'Formulário validado com sucesso!';
 
@@ -16,8 +17,11 @@ function validaFormulario(){
     else{
         const containerErrorMessage = document.querySelector('.error-message');
         containerErrorMessage.innerHTML = errorMessage;
+        numberA.style.border = '1px solid red';
+        numberB.style.border = '1px solid red';
         containerErrorMessage.style.display = 'block';
     }
+
 }
 
 form.addEventListener('submit',function (e){
