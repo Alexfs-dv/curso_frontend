@@ -26,5 +26,5 @@ function validaFormulario(){
 
 form.addEventListener('submit',function (e){
     e.preventDefault();
-    validaFormulario();
+   //validaFormulario();
 })
