@@ -1,5 +1,4 @@
 const form = document.getElementById('form-maior');
-const eValido = document.getElementById('number-a');
 const errorMessage = 'O número do campo B precisa ser maior';
 const successMessage = 'Formulário validado com sucesso!';
 
