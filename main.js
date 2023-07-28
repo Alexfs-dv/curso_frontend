@@ -13,7 +13,6 @@ $(document).ready(function(){
 
     function riscaTarefa(){
         $(this).addClass('feito');
-        console.log('clicou')
     }
 
     $(novaTarefa).on('click','li', riscaTarefa);
