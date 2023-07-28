@@ -65,3 +65,7 @@ ul li {
     width: 100%;
     margin: 0 auto;
 }
+
+.feito {
+    text-decoration: line-through;
+}

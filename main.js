@@ -1,20 +1,21 @@
 $(document).ready(function(){
-    const novaTarefa = $('<li></li>')
+    const novaTarefa = $('<li></li>');
     
     $('form').on('submit', function(e){
         e.preventDefault();
         const nomeTarefa = $('#nome-tarefa').val();
         
-
-    $(`<li>${nomeTarefa}</li>`).appendTo(novaTarefa);
-    $(novaTarefa).appendTo('ul')
-    $('#nome-tarefa').val('');
+        $(`<li>${nomeTarefa}</li>`).appendTo(novaTarefa);
+        $(novaTarefa).appendTo('#listaTarefas');
+        $('#nome-tarefa').val('');
 
     })
 
-    let tarefaRealizada = novaTarefa;
+    function riscaTarefa(){
+        $(this).addClass('feito');
+        console.log('clicou')
+    }
 
-    $(tarefaRealizada).click(function(){
-        $(this).css("text-decoration","line-through");
-    })
+    $(novaTarefa).on('click','li', riscaTarefa);
+        
 })
