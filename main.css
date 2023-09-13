@@ -1,0 +1,28 @@
+.welcome{
+    background-color: rgb(245, 147, 19);
+    color: #fff;
+    position: relative;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.welcome h2 {
+    position: absolute;
+    font-size: 64px;
+}
+
+.conteudo {
+    padding: 100px;
+}
+
+.btn-custom {
+    background-color: rgb(245, 147, 19);
+    margin-top: 24px;
+    color: #fff;
+}
+
+.btn-custom:hover {
+    background-color: rgb(247, 174, 79);
+    color: #fff;
+}
